@@ -1,0 +1,16 @@
+[submodule "libgbinder"]
+	path = libgbinder
+	url = https://github.com/msizanoen1/libgbinder
+	branch = meson
+[submodule "libglibutil"]
+	path = libglibutil
+	url = https://github.com/msizanoen1/libglibutil
+	branch = meson
+[submodule "gbinder-python"]
+	path = gbinder-python
+	url = https://github.com/msizanoen1/gbinder-python
+	branch = fedora
+[submodule "waydroid"]
+	path = waydroid
+	url = https://github.com/msizanoen1/waydroid
+	branch = fedora
