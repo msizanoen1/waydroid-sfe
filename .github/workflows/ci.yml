@@ -1,0 +1,25 @@
+name: build-dist
+on: [push]
+jobs:
+  build-single-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - run: ./build.sh -F
+      - uses: actions/upload-artifact@v2
+        with:
+          name: waydroid-single-file
+          path: dist/waydroid
+  build-single-dir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - run: ./build.sh
+      - uses: actions/upload-artifact@v2
+        with:
+          name: waydroid-single-dir
+          path: dist/
